@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App{
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+}
+.navbar{
+  display: block;
+  background: rgb(56, 56, 56);
+  color: rgb(218, 213, 213);
+  padding: 10px;
+  text-align: center;
+}
+.navbar h2{
+  margin: 0;
+}
+.bookList{
+  background:  rgb(235, 232, 232);
+  max-height: 62%;
+  overflow-y: scroll;
+}
+.bookList ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.bookList ul li,.empty{
+  background: rgb(90, 89, 89);
+  padding: 10px;
+  color: rgb(218, 213, 213);
+}
+.bookList ul li .title{
+  font-size: 18px;
+  font-weight: bold;
+}
+.bookList ul li .auth{
+  font-size: 10px;
+}
+.bookDetails{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.bookDes{
+  margin-left: 10px;
+}
+.bookChk input[type="checkbox"]{
+  width: 10px;
+  border-radius: 50%;
+}
+.empty{
+  margin: 0;
+}
+.bookAddForm{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.bookAddForm form{
+  width: 100%;
+  background: rgb(56, 56, 56);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bookAddForm input{
+  box-sizing: border-box;
+  width: 80%;
+  margin-top: 10px;
+  padding: 10px;
+  background: #5A5959;
+  color: white;
+  border: unset;
+  border-radius: 5px;
+}
+.bookAddForm form button{
+  width: 80px;
+  height: 30px;
+  font-size: 15px;
+  background: white;
+  border: unset;
+  margin: 10px;
+  border-radius: 5px;
+}
